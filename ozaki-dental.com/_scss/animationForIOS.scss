@@ -1,0 +1,33 @@
+.anim {
+    // ul {
+      // border: 3px solid #ffae00;
+      // transform: translate(10%, 0);
+      animation: sliding 25000ms linear infinite;
+      // -webkit-animation: -webkit-sliding 25s linear infinite 0s;
+    // }
+}
+@keyframes sliding {
+  0%{
+    transform: translate(0%, 0%);
+    // opacity: 1;
+  }
+  50%{
+    transform: translate(-50%, 0%);
+    // opacity: 1;
+  }
+  99.9%,to{
+    transform: translate(-100%, 0%);
+    // transform: translate(1000px, 0);
+    // opacity: 0;
+  }
+}
+// @-webkit-keyframes -webkit-sliding {
+//   from{
+//     -webkit-transform: translate3d(0, 0, 0);
+//     // opacity: 1;
+//   }
+//   to{
+//     -webkit-transform: translate3d(-100%, 0, 0);
+//     // opacity: 0;
+//   }
+// }

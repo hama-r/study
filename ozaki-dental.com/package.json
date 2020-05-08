@@ -1,0 +1,34 @@
+{
+  "name": "ozaki-dental",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get your application up and running.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:scss": "node-sass ./_scss --output ./css --output-style compressed --sourceMap true",
+    "build:autoprefixer": "postcss ./css/*.css --use autoprefixer --no-map -d ./css/",
+    "watch:scss": "node-sass ./_scss --output ./css --output-style compressed --sourceMap true -r -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ibisdesign@bitbucket.org/ibisdesign/ozaki-dental.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "IE >= 11"
+  ],
+  "homepage": "https://bitbucket.org/ibisdesign/ozaki-dental#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "node-sass": "^4.13.1",
+    "postcss": "^7.0.27",
+    "postcss-cli": "^7.1.0",
+    "postcss-flexbugs-fixes": "^4.2.0"
+  },
+  "dependencies": {
+    "lazysizes": "^5.2.0"
+  }
+}

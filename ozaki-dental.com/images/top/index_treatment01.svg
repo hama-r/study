@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="190" height="190" viewBox="0 0 190 190">
+  <g id="index_treatment01" transform="translate(-10 -10)">
+    <circle id="楕円形_13" data-name="楕円形 13" cx="95" cy="95" r="95" transform="translate(10 10)" fill="#f9f6ef"/>
+    <g id="_" data-name="ｄｄ">
+      <g id="グループ_13" data-name="グループ 13" transform="translate(-1794.653 -490.963)">
+        <g id="グループ_12" data-name="グループ 12" transform="translate(1857.653 550.963)">
+          <path id="パス_37" data-name="パス 37" d="M1925.085,578.924c1.8-6.18,2.854-13.637-.767-18.706-8.652-12.112-21.5-10.592-29.665-5.3a4.519,4.519,0,0,1-4.919,0c-8.162-5.294-21.012-6.815-29.664,5.3-6.126,8.576,1.123,23.993,2.757,28.486s-.386,15.06.511,22.768c1.021,8.781,7.186,18.594,11.679,18.594,4.126,0,5.259-23.96,14.517-27.861" transform="translate(-1857.653 -550.963)" fill="#fff" stroke="#767777" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+          <path id="パス_38" data-name="パス 38" d="M1918.372,576.08c3.66,1.626,8.655,4.066,13.375,4.066s8.786-3.05,11.632-4.066" transform="translate(-1896.334 -566.964)" fill="#fff" stroke="#ffbb63" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        </g>
+        <circle id="楕円形_3" data-name="楕円形 3" cx="19.582" cy="19.582" r="19.582" transform="translate(1887.064 603.133) rotate(-45)" stroke-width="4" stroke="#767777" stroke-linecap="round" stroke-linejoin="round" fill="#fff"/>
+        <line id="線_13" data-name="線 13" x2="9.098" y2="9.18" transform="translate(1930.104 617.901)" fill="none" stroke="#767777" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        <circle id="楕円形_4" data-name="楕円形 4" cx="10.127" cy="10.127" r="10.127" transform="translate(1904.63 593.005)" fill="#ffbb63"/>
+      </g>
+      <g id="グループ_46" data-name="グループ 46" transform="translate(-1801.024 -496.963)" opacity="0">
+        <g id="グループ_12-2" data-name="グループ 12" transform="translate(1857.653 550.963)">
+          <path id="パス_37-2" data-name="パス 37" d="M1935.218,583.125c2.074-7.108,3.282-15.686-.882-21.517-9.952-13.932-24.732-12.184-34.122-6.094a5.2,5.2,0,0,1-5.658,0c-9.389-6.09-24.169-7.839-34.122,6.094-7.046,9.865,1.292,27.6,3.171,32.766s-.444,17.323.587,26.189c1.174,10.1,8.266,21.388,13.434,21.388,4.746,0,6.049-27.56,16.7-32.048" transform="translate(-1857.653 -550.963)" fill="#fff" stroke="#767777" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+          <path id="パス_38-2" data-name="パス 38" d="M1918.372,576.08c4.21,1.871,9.955,4.677,15.385,4.677s10.106-3.508,13.38-4.677" transform="translate(-1893.022 -565.594)" fill="#fff" stroke="#ffbb63" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        </g>
+        <circle id="楕円形_3-2" data-name="楕円形 3" cx="22.525" cy="22.525" r="22.525" transform="translate(1891.483 610.972) rotate(-45)" stroke-width="4" stroke="#767777" stroke-linecap="round" stroke-linejoin="round" fill="#fff"/>
+        <line id="線_13-2" data-name="線 13" x2="10.465" y2="10.56" transform="translate(1940.99 627.959)" fill="none" stroke="#767777" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        <circle id="楕円形_4-2" data-name="楕円形 4" cx="11.649" cy="11.649" r="11.649" transform="translate(1911.688 599.322)" fill="#ffbb63"/>
+      </g>
+    </g>
+  </g>
+</svg>

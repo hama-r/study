@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "animationForIOS.css",
+	"sources": [
+		"../_scss/animationForIOS.scss"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,KAAK,AAAC,CAIA,SAAS,CAAE,+BAA+B,CAG/C,AACD,UAAU,CAAV,OAAU,CACR,EAAE,CACA,SAAS,CAAE,iBAAiB,CAG9B,GAAG,CACD,SAAS,CAAE,mBAAmB,CAGhC,KAAK,CAAC,EAAE,CACN,SAAS,CAAE,oBAAoB"
+}

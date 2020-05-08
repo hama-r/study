@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>svg Symbols</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="../dist/_nuxt/css/app.css">
+    <style>
+      .symbol{
+        text-align: center;
+        border: 1px solid #cccccc;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <%= inlineSvg %>
+    <header class="hero">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class='title'>svg Symbols</h1>
+        </div>
+      </div>
+    </header>
+    <div class="section">
+      <div class="container">
+        <ul class='symbols columns is-multiline'>
+          <% _.each(symbols, function(symbol) { %>
+            <li class='symbol column'>
+              <svg><use xlink:href="#<%= symbol.id %>"></use></svg>
+              <div class='symbol-id'><%= symbol.id %></div>
+            </li>
+          <% }); %>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

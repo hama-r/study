@@ -1,0 +1,72 @@
+article.cta-area-block
+  div.cta-area-block__ttl__text
+    |「ならでん」にするといくら安くなる?<br>
+    |関西電力との比較が一目瞭然!
+  section.cta-area__simulation
+    h3.cta-area__simulation__ttl
+      |簡易電気代シミュレーション
+    dl.electricbill__simulation__block
+      dt.electricbill__simulation__ttl
+        span 従量電灯A
+        |使用状況
+      dd.electricbill__simulation__input
+        label(for="elmId021")
+        input.den-input(type="number" name="kWh-A" placeholder="300")
+  div.electricbill__simulation__result
+    dl.electricbill-simulation__result-box
+      dt.electricbill-simulation__result-box__ttl
+        |ならでん月間電気料金
+      dd(class="electricbill-simulation__result-box__sum naraden-sum")
+      dt.electricbill-simulation__result-box__ttl
+        |関西電力月間電気料金
+      dd(class="electricbill-simulation__result-box__sum kanden-sum")
+    dl(class="electricbill-simulation__result-box saving")
+      dt.electricbill-simulation__result-box__ttl
+        |月間節約額
+      dd(class="electricbill-simulation__result-box__sum naraden-sum-otoku")
+      dt.electricbill-simulation__result-box__ttl
+        |年間節約額
+      dd(class="electricbill-simulation__result-box__sum kanden-sum-otoku")
+
+    aside.electricbill-simulation__caution-box
+      h3.electricbill-simulation__caution-box__ttl 「電気代簡単シミュレーション」 利用上のご注意
+      ul.electricbill-simulation__caution-list
+        li.electricbill-simulation__caution-list__item
+          |表示される削減額をはじめとするすべての結果は月額を基本に当社にて推計したものであり、実際の削減額や支払額を保証するものではありません。
+        li.electricbill-simulation__caution-list__item
+          |比較対象としている旧一般電気事業者の電気料金は、旧一般電気事業者が公にしている情報に基づいて試算したものです。
+        li.electricbill-simulation__caution-list__item
+          |当社では旧一般電気事業者の料金プラン／サービス等に関するご質問にはお答えできません。旧一般電気事業者に直接お問い合わせください。
+        li.electricbill-simulation__caution-list__item
+          |試算結果は税込金額です。深夜機器割引、口座振替割引等、各種割引は含みません。また、試算結果を表示する際の小数点以下は切り捨てて計算しています。
+        li.electricbill-simulation__caution-list__item
+          |試算結果には、燃料費調整額および再生可能エネルギー発電促進賦課金は含みません。燃料費調整額、再生可能エネルギー発電促進賦課金ともに、旧一般電気事業者が規定する金額と同額を別途適用致します（削減額は変わることはございません）。
+        li.electricbill-simulation__caution-list__item
+          |太陽光発電をはじめとした自家発電設備や蓄電池をご利用の場合、試算結果が実際の支払額と大きく異なる場合があります。
+        li.electricbill-simulation__caution-list__item
+          |従量電灯、低圧電力ともに電気のご利用状況によってはご提供できない場合がございます。予めご了承ください。
+
+  .cta-area__btn-other
+    a(href="https://www.naradenryoku.co.jp/kansai_simu.html",target="_blank")
+      div.cta-area__btn-other__icon
+        svg: use(xlink:href="#ico_graph")
+      div.cta-area__btn-other__label-text
+        | 従量電灯B、低圧電力の電気代シミュレーションはこちら
+  div.cta-area-block__ttl__text
+    |お申し込み方法や料金プランなど、<br>お気軽にご質問ください
+
+  ul.ctaList__box
+    li.ctaList__box__item
+      a(href="#formarea" , class="js-smooth-scroll")
+        div.ctaList__box__icon
+          svg: use(xlink:href="#ico_mail")
+        div.ctaList__box__label-text
+          |フォームで<br class="sp">お問い合わせ
+    li.ctaList__box__item
+      a(href="")
+        div.ctaList__box__icon
+          svg: use(xlink:href="#ico_phone")
+        div(class="ctaList__box__label-text tel")
+          |電話で<br class="sp">お問い合わせ
+          span 受付時間 00:00~00:00
+

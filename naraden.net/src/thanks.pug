@@ -1,0 +1,25 @@
+extends _inc/_layout_simple
+block var
+block title
+  title 送信完了　関西の電気 安さで選ぶなら【ならでん】電力自由化企業
+block link
+  link(rel="stylesheet", href="./form/mfp.statics/mailformpro.css")
+  link(rel="stylesheet", href="/css/common.css")
+
+block body
+  article.article-list
+    h2.article-list__.article-title
+      |お問い合わせありがとうございました。
+    section.inquiry-box
+      .inquiry-box__text
+        p お問い合わせくださりありがとうございます。<br>頂いた内容について、担当者より案内いたしますので少々お待ちください。
+
+      div.inquiry-box__contact-btn
+        a(href="/")
+          div(class="ctaList__box__label-text tel")
+            |トップへ戻る
+
+  
+block end_of_body
+  script(src="/js/common.js")
+  script(src="/js/Naraden.js")

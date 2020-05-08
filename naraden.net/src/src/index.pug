@@ -1,0 +1,325 @@
+extends _inc/_layout
+block var
+  -
+    var arr = [
+      {
+        title : '電力切り替えには何が必要ですか?',
+        Atext : 'お申込フォームからお申込いただくだけ、すべてネットで完結します。今の電力会社の解約など、切替手続きはすべて「ならでん」が行います。ご不明な点がございましたらお気軽にお問い合わせください。'
+      },
+      {
+        title : '「ならでん」の料金体系の特徴は何ですか?',
+        Atext : 'どこよりも安くてシンプルな料金体系をコンセプトとしています。電気料金だけで見ると最安値級なので、長期的に考えるほど魅力を感じていただけると思います。'
+      },
+      {
+        title : '申し込み後、いつからに切り替わりますか?',
+        Atext : 'ご家庭のお客様の場合、基本的にはお申し込みから2週間後の最初の検針日から供給開始となります。供給開始予定日は、お申込み後通知するマイページにてご確認いただけます。'
+      },
+      {
+        title : 'スマートメーターとは何ですか?',
+        Atext : 'スマートメーターは新しい電力量計のことで、通信機能により遠隔地から検針が可能になります。新電力利用には必須ですが、関西電力もしくは委託先の施行会社より、原則無料で設置されます。'
+      },
+      {
+        title : '「ならでん」への切り替えに工事は必要ですか?',
+        Atext : 'スマートメーター設置済みの場合、工事はありません。スマートメーターが設置されていない場合は設置の工事が必要ですが、費用や手続きは必要ございません。「ならでん」にお申し込みいただいたら、関西電力もしくは委託先の施行会社より、設置の案内がございます。'
+      },
+      {
+        title : 'マンションや賃貸でも「ならでん」は利用できますか?',
+        Atext : 'マンションにお住まいの場合でも、お客様が電力会社と個別に契約している場合はお申し込みいただけます。詳細は、現在ご契約中の電力会社、または、マンションの管理組合にお問い合わせください。'
+      },
+      {
+        title : '電気代はどれくらい安くなりますか?',
+        Atext : 'お客さまの電気ご使用量などによって異なります。どのぐらいお得になるかは「ならでん」の料金シミュレーションにてご確認いただけます。'
+      },
+      {
+        title : '契約期間中に料金が変わることはありますか?',
+        Atext : '増税などの理由により料金を改定させていただこくことがあります。その際は、猶予期間をもってお客様にお知らせをいたします。'
+      },
+      {
+        title : '支払い方法はなにがありますか?',
+        Atext : '口座振替または[Visa] [Master][Diners] のクレジットカードにてお支払いいただけます。支払い日は検針日によって変わりますが、当月の20日または翌月の6日となります。'
+      },
+      {
+        title : '「ならでん」に切り替えることで停電の可能性が高くなったりしませんか?',
+        Atext : '停電の可能性が高くなることはありません。お客さまのもとにお届けする電気は、これまで同様、関西電力など一般送配電事業者の送配電網を利用します。電力供給の品質は従来と全く変わりません。Q.解約に解約金はかかりますか'
+      },
+      {
+        title : '電気料金の確認や支払方法の変更はどのようにできますか?',
+        Atext : '毎月の電気料金やご使用量については、お申込み後通知するマイページよりご確認いただけます。別途発行手数料がかかりますが、請求書発行も可能です。各種変更についてはマイページまたは「ならでん」公式ホームページより可能です。'
+      },
+      {
+        title : 'お店や事務所でも申し込めますか?',
+        Atext : 'もちろんでございます。「ならでん」には個人・法人両方への多くの供給実績があり、一般家庭向けの「ならでん電灯A」、お店など電力消費量が多い方向けの「ならでん電灯B」、工場などでもご利用いただける「ならでん低圧電力」がございます。ぜひ一度お問い合わせください。'
+      },
+      {
+        title : '申し込む際、現在の電力会社に連絡は必要ですか?',
+        Atext : 'お客さまによる電力会社への解約の連絡は必要ございません。「ならでん」にお申込みいただくだけで、弊社より解約、切り替えに必要な手続きを手配いたします。'
+      }
+    ]
+block title
+  title 関西の電気 安さで選ぶなら【ならでん】電力自由化企業
+block link
+  link(rel="stylesheet", href="./form/mfp.statics/mailformpro.css")
+  link(rel="stylesheet", href="/css/common.css")
+block body
+  include _cta
+  article.article-list
+    h2.article-list__.article-title
+      |「ならでん」にするだけで<br>こんなに安くなる!
+
+    ul.casestudy-box__list
+      li.casestudy-box__list
+        section.casestudy-box
+          h3.casestudy-box__ttl
+            |CASE1
+          div.casestudy-box__block
+            .casestudy-box__text
+              |普段の電気代が9,000円くらいなら<br>「ならでん」に切り替えると
+              em 年間
+                span 9,000
+                |円以上もお得!
+              .casestudy-box__graph-ttl
+                |主要電力会社の月額電気代比較
+              img(src="../images/comparison_graph-01.png" , alt="年間 9,000円以上もお得!")
+              .casestudy-box__graph-subtext
+                |※関西電力エリア 従量電灯A 毎月400kWh使用した場合<br>
+                |※2020年3月 各社公式HPより関西エリアの一般的なプランにて算出
+      li.casestudy-box__list
+        section.casestudy-box
+          h3.casestudy-box__ttl
+            |CASE2
+          div.casestudy-box__block
+            .casestudy-box__text
+              |普段の電気代が16,000円くらいなら<br>
+              |「ならでん」に切り替えると
+              em 年間
+                span 22,000
+                |円以上もお得!
+              .casestudy-box__graph-ttl
+                |主要電力会社の月額電気代比較
+              img(src="../images/comparison_graph-02.png" , alt="年間 22,000円以上もお得!")
+              .casestudy-box__graph-subtext
+                |※関西電力エリア 従量電灯A 毎月600kWh使用した場合<br>
+                |※2020年3月 各社公式HPより関西エリアの一般的なプランにて算出
+  
+  article.article-list
+    h2.article-list__.article-title
+      span 奈良県だけでなく関西全域で<br>
+      |「ならでん」を選択する<br>家庭が増えています
+    ul.select-naraden-list__box
+      li.select-naraden-list__box__item
+        .select-naraden-list__box__item__image
+          img(src="../images/select_naraden01.png" , alt="image")
+        h3.select-naraden-list__box__item__ttl
+          span 安い！<br>
+          |関西エリア最安値
+        .select-naraden-list__box__item__text
+          p 私たちは「全国でいちばん安く」をコンセプトに電力を提供してきました。徹底的なコスト削減により、関西電力はもちろん、各新電力と比較しても、最安値級で電力を提供しています。
+      li.select-naraden-list__box__item
+        .select-naraden-list__box__item__image
+          img(src="../images/select_naraden02.png" , alt="image")
+        h3.select-naraden-list__box__item__ttl
+          span 安心！<br>
+          |関西全域に安定供給
+        .select-naraden-list__box__item__text
+          p 「ならでん」は関西電力の送配電網を利用しているため、関西全域に安定して電力を届けることができます。停電リスクや電気品質についても何も変わりません。これまでと同じ電気を、これまで以上に安くご利用いただけます。
+      li.select-naraden-list__box__item
+        .select-naraden-list__box__item__image
+          img(src="../images/select_naraden03.png" , alt="image")
+        h3.select-naraden-list__box__item__ttl
+          span 信頼！<br>
+          |自治体への供給実績多数
+        .select-naraden-list__box__item__text
+          p 「ならでん」は、役所、学校施設、美術館、その他さまざまな自治体、企業への供給実績があります。安さだけでなく、企業としての信頼性、サポート体制もご安心ください。
+      li(class="select-naraden-list__box__item easy")
+        .select-naraden-list__box__item__image
+          img(src="../images/select_naraden04.png" , alt="image")
+        h3.select-naraden-list__box__item__ttl
+          span 簡単！<br>
+          |手続きは全てネットで完結
+        .select-naraden-list__box__item__text
+          p 申込に際して、書類の返送や現在の電力会社への解約手続き、工事などは一切必要ありません。ネットから申し込んで後は待つだけ。切り替え後、毎月電気代がどれだけ安くなっているか、ご確認ください。<br>
+          span.small ※口座振替をご希望の場合は郵送書類が必要になります
+
+  include _cta
+
+  article.article-list
+    h2.article-list__.article-title
+      |ご利用者様の声
+    ul.voice-list__box
+      li.voice-list__box__item
+        dl.voice-list__box__ttlcontents
+          dt.voice-list__box__ttlcontents__image
+            img(src="../images/voice-image01.jpg")
+          dd.voice-list__box__ttlcontents__text
+            |決め手はシンプルな安さ
+            span 橿原市　A様
+        .voice-list__textbox
+          |「ならでん」に決めたのはシンプルな価格の安さ。乗り換えで比較した他社は携帯電話の通信費とセットで割引とか、ポイント還元とか複雑で…。「ならでん」のわかりやすい「業界最安値」が一番の決め手でした。<br>
+          |乗り換えてみて、この夏の請求額が驚くほど安くなっていて「今まで払ってきた電気代は何だったんだ」と思いました。「ならでん」を選んで満足です。
+
+  article.article-list
+    h2.article-list__.article-title
+      |よくある質問
+
+    ul.qa-list-box
+      each val in arr
+        li.qa-list-box__item
+            dl.qa-list-box__contents
+              dt.qa-list-box__contents__ttl
+                span Q
+                | #{val.title}
+              dd.qa-list-box__contents__text
+                p #{val.Atext}
+
+  article.article-list
+    h2.article-list__.article-title
+      |お申し込みの流れ
+    ol.flow-list__box
+      li.flow-list__item
+        .flow-list__item-ttl
+          .flow-list__item-ttl__icon
+            svg: use(xlink:href="#ico_call")
+          .flow-list__item-ttl__text
+            span STEP1
+            |インターネットまたは電話でお申し込み
+        .flow-list__item-contents
+          p インターネットまたは電話でお申し込みください。面倒な郵送はいりません。電気ご使用量のお知らせ（検針票）とクレジットカードまたは口座情報をご用意ください。<br>ご不明な点やご質問がございましたらお問い合わせください。
+      li.flow-list__item
+        .flow-list__item-ttl
+          .flow-list__item-ttl__icon
+            svg: use(xlink:href="#ico_meter")
+          .flow-list__item-ttl__text
+            span STEP2
+            |切り替え手続き
+        .flow-list__item-contents
+          p 現在の電力会社の解約手続きやスマートメーターの設置確認など、切り替え手続きはすべて「ならでん」が手配します。電力の供給開始まで、少々お待ちください。
+      li.flow-list__item
+        .flow-list__item-ttl
+          .flow-list__item-ttl__icon
+            svg: use(xlink:href="#ico_plug")
+          .flow-list__item-ttl__text
+            span STEP3
+            |「ならでん」の電力をご利用いただけます
+        .flow-list__item-contents
+          p 供給開始日をお申込み後に通知するマイページより確認いただけます。切り替わった後は、これまでと変わらない電気を、これまで以上にお安くご利用いただけます。
+
+  article.bottom-ctaarea-box
+    .bottom-ctaarea-box-contents__image
+        h2.bottom-ctaarea-box-contents__ttl
+          |関西の電気、安さで選ぶなら<br>
+          span
+            img(src="../images/logo.png" , alt="ならでんロゴ")
+    section.bottom-ctaarea-box-contents
+      .bottom-ctaarea-box-contents____point
+        p 「ならでん」にするといくら安くなる?<br>関西電力との比較が一目瞭然!
+      section.cta-area__simulation
+        h3.cta-area__simulation__ttl
+          |簡易電気代シミュレーション
+        dl.electricbill__simulation__block
+          dt.electricbill__simulation__ttl
+            span 従量電灯A
+            |使用状況
+          dd.electricbill__simulation__input
+            label(for="elmId021")
+            input.den-input(type="number" name="kWh-A" placeholder="300")
+      div.electricbill__simulation__result
+        dl.electricbill-simulation__result-box
+          dt.electricbill-simulation__result-box__ttl
+            |ならでん月間電気料金
+          dd(class="electricbill-simulation__result-box__sum naraden-sum")
+          dt.electricbill-simulation__result-box__ttl
+            |関西電力月間電気料金
+          dd(class="electricbill-simulation__result-box__sum kanden-sum")
+        dl(class="electricbill-simulation__result-box saving")
+          dt.electricbill-simulation__result-box__ttl
+            |月間節約額
+          dd(class="electricbill-simulation__result-box__sum naraden-sum-otoku")
+          dt.electricbill-simulation__result-box__ttl
+            |年間節約額
+          dd(class="electricbill-simulation__result-box__sum kanden-sum-otoku")
+
+        aside.electricbill-simulation__caution-box
+          h3.electricbill-simulation__caution-box__ttl 「電気代簡単シミュレーション」 利用上のご注意
+          ul.electricbill-simulation__caution-list
+            li.electricbill-simulation__caution-list__item
+              |表示される削減額をはじめとするすべての結果は月額を基本に当社にて推計したものであり、実際の削減額や支払額を保証するものではありません。
+            li.electricbill-simulation__caution-list__item
+              |比較対象としている旧一般電気事業者の電気料金は、旧一般電気事業者が公にしている情報に基づいて試算したものです。
+            li.electricbill-simulation__caution-list__item
+              |当社では旧一般電気事業者の料金プラン／サービス等に関するご質問にはお答えできません。旧一般電気事業者に直接お問い合わせください。
+            li.electricbill-simulation__caution-list__item
+              |試算結果は税込金額です。深夜機器割引、口座振替割引等、各種割引は含みません。また、試算結果を表示する際の小数点以下は切り捨てて計算しています。
+            li.electricbill-simulation__caution-list__item
+              |試算結果には、燃料費調整額および再生可能エネルギー発電促進賦課金は含みません。燃料費調整額、再生可能エネルギー発電促進賦課金ともに、旧一般電気事業者が規定する金額と同額を別途適用致します（削減額は変わることはございません）。
+            li.electricbill-simulation__caution-list__item
+              |太陽光発電をはじめとした自家発電設備や蓄電池をご利用の場合、試算結果が実際の支払額と大きく異なる場合があります。
+            li.electricbill-simulation__caution-list__item
+              |従量電灯、低圧電力ともに電気のご利用状況によってはご提供できない場合がございます。予めご了承ください。
+
+      .cta-area__btn-other
+        a(href="https://www.naradenryoku.co.jp/kansai_simu.html",target="_blank")
+          div.cta-area__btn-other__icon
+            svg: use(xlink:href="#ico_graph")
+          div.cta-area__btn-other__label-text
+            | 従量電灯B、低圧電力の電気代シミュレーションはこちら
+
+  article.article-list
+    h2.article-list__.article-title
+      |お問い合わせ
+    section.inquiry-box
+      .inquiry-box__text
+        p 「ならでん」をご検討くださりありがとうございます。お申し込み方法や料金プランなど、ご質問がございましたらお電話または、フォームよりお気軽にご連絡ください。
+      div.inquiry-box__contact-btn
+        a(href="")
+          div.ctaList__box__icon
+            svg: use(xlink:href="#ico_phone")
+          div(class="ctaList__box__label-text tel")
+            |電話でお問い合わせ
+            span 受付時間 00:00~00:00
+
+  section.inquiry-form-box#formarea
+    h3.inquiry-form-box__ttl
+      span お問い合わせフォーム
+    form(id="mailformpro" ,action="./form/mailformpro/mailformpro.cgi" , method="post")
+      dl
+        dt お名前
+          span 必須
+        dd
+          input(type="text" , name="お名前" , required="required")
+      dl
+        dt メールアドレス
+          span 必須
+        dd
+          input( type="email" , name="メールアドレス", required="required")
+      dl
+        dt お電話番号
+          span 必須
+        dd
+          input( type="tel" , name="お電話番号", required="required")
+      dl
+        dt お問合せ種別
+          span 必須
+        dd
+          div.mailformpro__area_select
+            select(name="お問合せ種別" , required="required")
+              option(value="お申し込み方法について") お申し込み方法について
+              option(value="電気代・支払いについて") 電気代・支払いについて
+              option(value="サポート体制・品質について") サポート体制・品質について
+              option(value="資料請求") 資料請求
+              option(value="その他") その他
+      dl
+        dt お問い合わせ内容
+          span 必須
+        dd
+          textarea(name="お問い合わせ内容", required="required")
+
+      .inquiry-form-box__btn-send
+        input(type="submit" , value="内容を確認")
+
+  script(src="./form/mailformpro/mailformpro.cgi" , charset="UTF-8" , id="mfpjs")
+
+
+
+block end_of_body
+  script(src="/js/common.js")
+  script(src="/js/Naraden.js")

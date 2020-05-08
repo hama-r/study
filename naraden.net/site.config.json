@@ -1,0 +1,13 @@
+{
+  "siteconf": {
+    "rootPath": "/"
+  },
+  "setting": {
+    "scroll": {
+      "scrollSpeed": 800,
+      "scrollEasing": "easeOutCubic",
+      "scrollFixedHeader": true,
+      "header": "#header"
+    }
+  }
+}

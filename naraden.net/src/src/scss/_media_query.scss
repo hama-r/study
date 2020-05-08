@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+// メディアクエリ設定
+
+// 設定例
+// min-width
+// $breakpoint-up: (
+// 	's': 'screen and (min-width: 400px)',
+// 	'm': 'screen and (min-width: 768px)',
+// 	'l': 'screen and (min-width: 1000px)',
+// 	'xl': 'screen and (min-width: 1200px)',
+// ) !default;
+
+// // max-width
+// $breakpoint-down: (
+// 	's': 'screen and (max-width: 399px)',
+// 	'm': 'screen and (max-width: 767px)',
+// 	'l': 'screen and (max-width: 999px)',
+// 	'xl': 'screen and (max-width: 1199px)',
+// ) !default;
+
+$mobile: 375px;
+$tablet: 768px;
+$laptop: 1200px;
+
+// min-width
+$breakpoint-up: (
+  'mobile': 'screen and (min-width: #{$mobile})',
+  'tablet': 'screen and (min-width: #{$tablet})',
+  'laptop': 'screen and (min-width: #{$laptop})',
+  's': 'screen and (min-width: #{$mobile})',
+  'l': 'screen and (min-width: #{$tablet})',
+  'xl': 'screen and (min-width: #{$laptop})'
+) !default;
+
+// max-width
+$breakpoint-down: (
+  'mobile': 'screen and (max-width: #{$mobile - 1px})',
+  'tablet': 'screen and (max-width: #{$tablet - 1px})',
+  'laptop': 'screen and (max-width: #{$laptop - 1px})',
+  's': 'screen and (max-width: #{$mobile - 1px})',
+  'l': 'screen and (max-width: #{$tablet - 1px})',
+  'xl': 'screen and (max-width: #{$laptop - 1px})'
+) !default;
+
+// @mixinの定義
+@mixin mq-up($breakpoint: tablet) {
+  @media #{map-get($breakpoint-up, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin mq-down($breakpoint: tablet) {
+  @media #{map-get($breakpoint-down, $breakpoint)} {
+    @content;
+  }
+}
